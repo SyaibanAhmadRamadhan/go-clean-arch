@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  app:
+    container_name: app_name
+    image: imageid
+    ports:
+      - '8181:8181'
+    volumes:
+      - type: bind
+        source: ./.env
+        target: /app/.env
+        read_only: true
+    networks:
+      - app
+
+networks:
+  app:
+    external: true

@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS m_users;
+DROP TYPE IF EXISTS gender_enum;
